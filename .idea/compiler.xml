@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shop-gateway" />
         <module name="shop-registry" />
+        <module name="shop-item-service" />
+        <module name="shop-item-interface" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,6 +17,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="clx-shop" options="-parameters" />
       <module name="shop-gateway" options="-parameters" />
+      <module name="shop-item" options="-parameters" />
+      <module name="shop-item-interface" options="-parameters" />
+      <module name="shop-item-service" options="-parameters" />
       <module name="shop-registry" options="-parameters" />
     </option>
   </component>
