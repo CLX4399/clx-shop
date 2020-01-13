@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: leyou-gateway
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+zuul:
+  prefix: /api
+  routes:
+    item-service: /item/**
