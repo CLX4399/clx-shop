@@ -10,12 +10,14 @@
         <module name="shop-registry" />
         <module name="shop-item-service" />
         <module name="shop-item-interface" />
+        <module name="shop-common" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="clx-shop" options="-parameters" />
+      <module name="shop-common" options="-parameters" />
       <module name="shop-gateway" options="-parameters" />
       <module name="shop-item" options="-parameters" />
       <module name="shop-item-interface" options="-parameters" />
