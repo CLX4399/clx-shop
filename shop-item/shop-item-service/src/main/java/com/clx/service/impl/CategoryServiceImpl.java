@@ -4,7 +4,6 @@ import com.clx.mapper.CategoryMapper;
 import com.clx.service.CategoryService;
 import com.clxshop.item.pojo.Category;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,7 +25,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<Category> queryCategoriesByPid(Long pid) {
         Category category = new Category();
-        category.setId(pid);
+        category.setParentId(pid);
         List<Category> list = categoryMapper.select(category);
         return list;
     }
