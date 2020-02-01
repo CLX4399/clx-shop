@@ -36,7 +36,7 @@ public class BrandServiceImpl implements BrandService {
 
         PageHelper.startPage(page, rows);
 
-        if (StringUtils.isBlank(sortBy)) {
+        if (StringUtils.isNotBlank(sortBy) && desc != null) {
             example.setOrderByClause(sortBy + " " + (desc ? "desc" : "asc"));
         }
 
