@@ -1,3 +1,6 @@
 /shop-item/shop-item-service/target/
 /shop-item/shop-item-interface/target/
 /shop-gateway/target/
+/shop-item/shop-item-service/target/classes/application.yml
+/shop-item/shop-item-service/target/classes/
+/shop-gateway/target/classes/
