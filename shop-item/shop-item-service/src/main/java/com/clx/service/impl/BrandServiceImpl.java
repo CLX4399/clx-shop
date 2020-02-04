@@ -59,4 +59,10 @@ public class BrandServiceImpl implements BrandService {
                 }
         );
     }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public void updateBrand(Brand brand) {
+        this.brandMapper.updateByPrimaryKey(brand);
+    }
 }

@@ -23,4 +23,5 @@ public interface BrandService {
 
     void saveBrand(Brand brand, List<Long> cids);
 
+    void updateBrand(Brand brand);
 }

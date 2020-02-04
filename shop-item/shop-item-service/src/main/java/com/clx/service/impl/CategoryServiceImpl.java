@@ -30,4 +30,10 @@ public class CategoryServiceImpl implements CategoryService {
         return list;
     }
 
+    @Override
+    public List<Category> queryByBrandId(Long bid) {
+        return this.categoryMapper.queryByBrandId(bid);
+    }
+
+
 }

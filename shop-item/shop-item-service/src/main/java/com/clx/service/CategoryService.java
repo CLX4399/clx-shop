@@ -1,8 +1,6 @@
 package com.clx.service;
 
 import com.clxshop.item.pojo.Category;
-import org.springframework.stereotype.Service;
-import sun.reflect.generics.scope.MethodScope;
 
 import java.util.List;
 
@@ -22,4 +20,5 @@ public interface CategoryService {
      */
     List queryCategoriesByPid(Long pid);
 
+    List<Category> queryByBrandId(Long bid);
 }
