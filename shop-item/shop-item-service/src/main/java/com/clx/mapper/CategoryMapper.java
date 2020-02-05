@@ -13,6 +13,8 @@ import java.util.List;
 public interface CategoryMapper extends Mapper<Category> {
 
     /**
+     * 通过id获取实体
+     *
      * @param bid
      * @return
      */
