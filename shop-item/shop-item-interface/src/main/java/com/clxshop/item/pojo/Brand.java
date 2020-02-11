@@ -19,7 +19,7 @@ public class Brand {
     private Long id;
     // 品牌名称
     private String name;
-    // 品牌图片1
+    // 品牌图片
     private String image;
 
     private Character letter;
