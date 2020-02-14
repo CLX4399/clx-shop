@@ -10,8 +10,6 @@ import javax.persistence.Table;
 /**
  * @author CLX
  * @date 2020/1/23 21:36.
- * 刷点github提交次数
- * 见谅
  */
 @Data
 @Table(name = "tb_brand")
