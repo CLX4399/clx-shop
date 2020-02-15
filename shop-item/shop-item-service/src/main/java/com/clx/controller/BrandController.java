@@ -26,6 +26,14 @@ public class BrandController {
     @Autowired
     private BrandService brandService;
 
+    /**
+     * create by: CLX
+     * description: 获取页面数据
+     * create time: 2020/2/15 23:21
+     *
+     * @return
+     * @Param: null
+     */
     @RequestMapping("page")
     public ResponseEntity<PageResult<Brand>> queryBrandsByPage(
             @RequestParam(value = "key", required = false) String key,
@@ -42,6 +50,14 @@ public class BrandController {
     }
 
 
+    /**
+     * create by: CLX
+     * description: 保存新增品牌
+     * create time: 2020/2/15 23:21
+     *
+     * @return
+     * @Param: null
+     */
     @PostMapping
     public ResponseEntity<Void> saveBrand(Brand brand, @RequestParam("cids") List<Long> cids) {
 
@@ -50,6 +66,14 @@ public class BrandController {
 
     }
 
+    /**
+     * create by: CLX
+     * description: 修改品牌信息
+     * create time: 2020/2/15 23:22
+     *
+     * @return
+     * @Param: null
+     */
     @PutMapping
     public ResponseEntity<Void> updateBrand(Brand brand) {
         this.brandService.updateBrand(brand);
