@@ -15,6 +15,7 @@ public interface BrandMapper extends Mapper<Brand> {
     /**
      * @param id
      * @param cid
+     * 插入信息的品牌信息
      */
     @Insert("insert into tb_category_brand (category_id, brand_id) values (#{category_id},#{brand_id});")
     void saveBrand(@Param("brand_id") Long id, @Param("category_id") Long cid);
