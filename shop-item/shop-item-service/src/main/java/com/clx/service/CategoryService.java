@@ -20,5 +20,13 @@ public interface CategoryService {
      */
     List queryCategoriesByPid(Long pid);
 
+    /**
+     * create by: CLX
+     * description: 通过id获取品牌信息
+     * create time: 2020/2/17 22:13
+     *
+     * @return
+     * @Param: null
+     */
     List<Category> queryByBrandId(Long bid);
 }
