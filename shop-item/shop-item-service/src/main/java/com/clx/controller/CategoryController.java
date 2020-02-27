@@ -29,7 +29,7 @@ public class CategoryController {
         this.categoryService = categoryService;
     }
 
-    @GetMapping("list/4561561")
+    @GetMapping("list")
     public ResponseEntity<List<Category>> queryCategoryByPid(@RequestParam("pid") Long pid) {
         if (pid == null || pid.longValue() < -1) {
             //放回400参数错误
