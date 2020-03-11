@@ -42,9 +42,6 @@ public class CategoryController {
         return ResponseEntity.ok(categories);
     }
 
-    /**
-     * @param bid id
-     */
     @GetMapping("bid/{bid}")
     public ResponseEntity<List<Category>> queryBrandByPid(@PathVariable("bid") Long bid) {
         List<Category> list = this.categoryService.queryByBrandId(bid);
